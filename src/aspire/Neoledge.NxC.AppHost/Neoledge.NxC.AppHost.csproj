@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>1b1351e3-3330-46c0-aba4-08c7e89b7cac</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.Keycloak" Version="9.3.0-preview.1.25265.20" />
+    <PackageReference Include="Aspire.Hosting.NodeJs" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.3.1" />
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="9.3.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\api\Neoledge.NxC.Api\Neoledge.NxC.Api.csproj" />
+    <ProjectReference Include="..\..\db\Neoledge.NxC.DatabaseMigrationService\Neoledge.NxC.DatabaseMigrationService.csproj" />
+    <ProjectReference Include="..\..\db\Neoledge.NxC.Database\Neoledge.NxC.Database.csproj" />
+    <ProjectReference Include="..\Neoledge.NxC.Aspire.Minio.Hosting\Neoledge.NxC.Aspire.Minio.Hosting.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\Neoledge.NxC.ServiceDefaults\Neoledge.NxC.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Neoledge.Elise.NxC.Platform.DatabaseMigrationService-b8cd96e6-f2f8-4a6c-a024-00efdb7e5366</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="9.3.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\aspire\Neoledge.NxC.ServiceDefaults\Neoledge.NxC.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Neoledge.NxC.Database\Neoledge.NxC.Database.csproj" />
+  </ItemGroup>
+</Project>

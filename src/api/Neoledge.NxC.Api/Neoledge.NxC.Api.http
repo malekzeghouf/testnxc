@@ -1,0 +1,6 @@
+@Neoledge.NxC.Api_HostAddress = http://localhost:5256
+
+GET {{Neoledge.NxC.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
